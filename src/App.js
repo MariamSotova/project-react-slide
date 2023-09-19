@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Slider } from "./Slider";
+import { Advant } from "./Advant";
+import { Header } from "./Header";
+import { Faqlist } from "./Faqlist";
+import { Modal } from "./Modal";
+import { ParallaxButton } from "./ButtonParallax";
+import { Income } from "./Income";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Slider />
+      <Advant />
+      <Header />
+      <Faqlist />
+      <Modal />
+      <ParallaxButton text="Bich" />
+      <ParallaxButton text="Yep" />
+      <Income />
     </div>
   );
 }

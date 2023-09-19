@@ -1,38 +1,324 @@
 .App {
-  text-align: center;
+  background-color: blueviolet;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* style for slider.jsx */
+#swiper1 {
+  box-sizing: border-box;
+  background: url(img/Rectangle1.svg) no-repeat;
+  background-position: right;
+  background-color: #ffffff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#swiper2 {
+  box-sizing: border-box;
+  background: url(img/Rectangle2.svg) no-repeat;
+  background-position: right;
+  background-color: #c2e5e0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#swiper3 {
+  box-sizing: border-box;
+  background: url(img/Rectangle3.svg) no-repeat;
+  background-position: right;
+  background-color: #e0c1ca;
+}
+
+.button-bg {
+  height: 500px;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
+}
+
+.img-position {
+  width: 300px;
+  height: auto;
+}
+
+.swiper-pagination-bullets {
+  width: 30%;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  width: 30%;
+}
+
+.sample-slider.swiper-pagination-bullet {
+  background-color: yellow;
+}
+
+/* style for advant.jsx */
+.advant-container {
+  font-size: 18px;
+  font-weight: 500;
+  color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  background-color: #fdf8ee;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.advant {
+  padding: 0 10px 0 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.advant-info {
+  display: flex;
+  flex-direction: column;
+  color: #000000;
+  justify-content: space-evenly;
+}
+
+.advant-title {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.advant-header {
+  font-size: 20px;
+  text-decoration: solid;
+  font-weight: bold;
+}
+
+.advant-text {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.advant-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.advant-wrapper-info {
+  padding-left: 10px;
+}
+
+@media only screen and (max-width: 960px) {
+  .img-advant {
+    width: 100%;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media only screen and (max-width: 760px) {
+  .img-advant {
+    display: none;
   }
+  .advant-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .advant-header {
+    font-size: 20px;
+    text-decoration: solid;
+    font-weight: bold;
+  }
+
+  .advant-text {
+    font-size: 18px;
+    font-weight: 300;
+  }
+  .advant-wrapper {
+    margin: 5px 0 5px 0;
+  }
+}
+
+/* style for Header.jsx */
+.header {
+  background-color: palevioletred;
+  height: 100px;
+  width: 100%;
+}
+
+/* for Faqlist.jsx*/
+
+.faq-wrp {
+  background-color: #1ce30e;
+  padding: 20px;
+}
+
+.faqs-container {
+  margin: 0 auto;
+  max-width: 650px;
+}
+
+.faq {
+  border-radius: 35px;
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  margin: 20px 0;
+  background-color: #ffffff;
+}
+
+.faq-title {
+  margin: 0 35px 0 0;
+}
+
+.faq-text {
+  display: none;
+  margin: 30px 0 0;
+}
+
+.faq.active.faq-text {
+  display: block;
+}
+
+.faq-toggle {
+  content: url(img/open.svg);
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  padding: 0;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+.faq.active.faq-toggle {
+  content: url(img/close.svg);
+}
+
+.faq-toggle:focus {
+  outline: none;
+}
+
+/*for Modal.jsx*/
+
+.section {
+  background: #db390c;
+  padding: 20px;
+}
+
+.window-wrp {
+  max-width: 650px;
+  margin: 0 auto;
+  height: 464px;
+  background-color: white;
+  border-radius: 35px;
+}
+
+form {
+  margin: 0 20px;
+  box-sizing: border-box;
+}
+
+.header-form {
+  text-align: center;
+  margin: 0;
+  padding-top: 48px;
+  text-decoration: underline;
+}
+
+.window-popup {
+  position: relative;
+}
+
+.wrp {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  border-radius: 35px;
+  height: 60px;
+  margin: 24px 0;
+  box-sizing: border-box;
+  border: 0.5px solid #534f4f;
+  text-align: left;
+  padding-left: 32px;
+}
+
+input[placeholder] {
+  text-decoration: underline;
+}
+
+.button-wrp {
+  text-align: center;
+  text-decoration: underline;
+}
+
+.button-submit {
+  width: 100%;
+  height: 76px;
+  color: #ffffff;
+  background: #1ce30e;
+  margin-top: 48px;
+  border-radius: 35px;
+  border: none;
+}
+
+.button-submit:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.active-modal {
+  overflow-y: hidden;
+}
+
+.btn-modal {
+  padding: 10px 20px;
+  display: block;
+  margin: 100px auto 0;
+  font-size: 18px;
+}
+
+.modal {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+}
+
+.modal-content {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+}
+
+.close-modal {
+  /* content: url(img/togglepopup.svg); button close with svg X */
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  padding: 0;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+/* style for Income.jsx*/
+
+.wrapper-tax {
+  width: 500px;
+  height: 600px;
+  background-color: aquamarine;
+}
+
+.tax-wrp {
+  background-color: rgb(255, 234, 127);
+}
+
+#income-tax {
+  font-size: 30px;
+  width: 200px;
+  height: 100px;
+  background-color: rgb(255, 127, 221);
 }
