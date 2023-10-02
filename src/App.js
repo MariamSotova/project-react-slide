@@ -15,7 +15,7 @@ function App() {
       <Header />
       <Faqlist />
       <Modal />
-      <ParallaxButton text="Bich" />
+      <ParallaxButton text="Button" />
       <ParallaxButton text="Yep" />
       <Income />
     </div>

@@ -39,6 +39,7 @@ export const Income = () => {
   );
 };
 
+// логика расчета ниже
 const taxIntervals = [
   { maxValue: 35129, rate: 9.45 },
   { maxValue: 68507, rate: 37.1 },
